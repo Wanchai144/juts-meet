@@ -1,0 +1,106 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/no_video_background"
+    android:keepScreenOn="true"
+    android:paddingTop="@dimen/spacing_10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/speaker_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/no_video_background"
+        app:layout_constraintBottom_toTopOf="@id/audience_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHeader" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="@dimen/spacing_5dp"
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/audience_row"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@id/controls_box2" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/controls_box2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/spacing_10dp"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMicrophone"
+            android:layout_width="@dimen/spacing_35dp"
+            android:layout_height="@dimen/spacing_35dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/control_padding"
+            android:src="@drawable/outline_mic_24"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCancel"
+            app:layout_constraintEnd_toStartOf="@+id/ivMicrophone"
+            app:layout_constraintTop_toTopOf="@+id/ivCancel"
+            app:tint="@color/color_white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivVideo"
+            android:layout_width="@dimen/spacing_35dp"
+            android:layout_height="@dimen/spacing_35dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/control_padding"
+            android:src="@drawable/outline_videocam_24"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCancel"
+            app:layout_constraintEnd_toStartOf="@+id/ivCancel"
+            app:layout_constraintTop_toTopOf="@+id/ivCancel"
+            app:tint="@color/color_white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChat"
+            android:layout_width="@dimen/spacing_28dp"
+            android:layout_height="@dimen/spacing_28dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/control_padding"
+            android:src="@drawable/ic_chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/color_white" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMore"
+            android:layout_width="@dimen/spacing_34dp"
+            android:layout_height="@dimen/spacing_34dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/control_padding"
+            android:src="@drawable/dots_horizontal_circle_outline"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCancel"
+            app:layout_constraintStart_toEndOf="@+id/ivVideo"
+            app:layout_constraintTop_toTopOf="@+id/ivCancel"
+            app:tint="@color/color_white" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

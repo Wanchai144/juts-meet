@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#570000</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBgLoading">#685A5A5A</color>
+
+    <color name="colorBaseText">#2D2D2D</color>
+    <color name="colorBorderGray">#888888</color>
+    <color name="colorForgotPassword">#2196F3</color>
+
+    <color name="colorPressed">#FF0000</color>
+    <color name="colorLongPressed">#AC1A1A</color>
+
+    <color name="colorShapeCircle">#FA8080</color>
+    <color name="colorShapeCircleLanguage">#99B3B3B3</color>
+
+    <color name="colorHeaderGray">#DDDDDD</color>
+    <color name="colorEdtDisable">#ECECEC</color>
+
+    <color name="no_video_participant">#5A8BFF</color>
+    <color name="no_video_background">#050505</color>
+    <color name="color_white">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+</resources>
